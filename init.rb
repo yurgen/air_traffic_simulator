@@ -1,7 +1,21 @@
 require_relative "airplane.rb"
 
-plane1 = Airplane.new
-plane1.speed = "Airobus"
-plane1.altitude = 54
+def show_plane_parametrs(plane)
+  puts "Aircraft type =   #{plane.aircraft_type}"
+  puts "Weight =   #{plane.weight}"
+  puts "Speed =   #{plane.speed}"
+  puts "Altitude =   #{plane.altitude}"
+  puts "Course =   #{plane.course}"
+end
 
-puts "Aircraft type of planeq is   #{plane1.speed}"
+plane1 = Airplane.new("Boeing-737","60000")
+plane2 = Airplane.new("Boeing-777","75000")
+
+show_plane_parametrs(plane1)
+puts
+show_plane_parametrs(plane2)
+puts
+puts plane1.position
+position = plane1.position
+puts "Position X = " + position[0].to_s
+puts "Position Y = #{position[1]}"
