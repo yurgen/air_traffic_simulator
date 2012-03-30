@@ -30,5 +30,4 @@ puts
 puts runway_1.surface_type
 puts runway_1.lenght
 
-runway_1.lenght = 1000
-puts runway_1.lenght
+
