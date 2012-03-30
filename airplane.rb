@@ -15,4 +15,9 @@ class Airplane
   def position
     [@position_x,@position_y]
   end
+  
+  def each_attribute
+    yield(@aircraft_type)
+    yield(@weight)
+  end
 end
