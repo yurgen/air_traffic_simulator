@@ -1,4 +1,5 @@
 require_relative "airplane.rb"
+require_relative "runway.rb"
 
 def show_plane_parametrs(plane)
   puts "Aircraft type =   #{plane.aircraft_type}"
@@ -22,3 +23,12 @@ puts plane1.position
 position = plane1.position
 puts "Position X = " + position[0].to_s
 puts "Position Y = #{position[1]}"
+
+
+runway_1 = Runway.new({"lenght" => 2200, "course" => 240, "surface_type" => "Asphalt", "position_x" => 650, "position_y" => 840})
+puts
+puts runway_1.surface_type
+puts runway_1.lenght
+
+runway_1.lenght = 1000
+puts runway_1.lenght
